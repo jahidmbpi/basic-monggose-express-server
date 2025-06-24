@@ -1,7 +1,12 @@
 export interface Iuser {
   fristName: string;
   lastName: string;
+  age: number;
   email: string;
   password: string;
-  role: "user" | "admin";
+  role: "USER" | "ADMIN" | "AUPERADMIN";
+}
+
+export interface UserInstanceMethods {
+  hashPassword(password: string): string;
 }

@@ -8,7 +8,7 @@ let server: Server;
 async function main() {
   try {
     await mongoose.connect(
-      "mongodb+srv://mongosse-app:UkPD8J8wPfpILcTq@cluster0.g8zp6.mongodb.net/mongoos-app?retryWrites=true&w=majority&appName=Cluster0"
+      "mongodb+srv://mongosse-app:UkPD8J8wPfpILcTq@cluster0.g8zp6.mongodb.net/mongoos-app"
     );
     console.log("connected to mongoosse using mongoosse");
     server = app.listen(port, () => {
